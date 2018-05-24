@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="14109"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MapViewController">
+            <connections>
+                <outlet property="annotationStates" destination="UAy-XS-rYP" id="nxW-we-JU3"/>
+                <outlet property="btnGo" destination="kZO-iM-3Sg" id="btn-cell-001"/>
+                <outlet property="mapView" destination="OGW-aC-Ew5" id="U8g-fw-5qt"/>
+                <outlet property="txtHeading" destination="ZsT-BQ-WJK" id="txt2"/>
+                <outlet property="txtLat" destination="Th5-bI-kaf" id="txt1"/>
+                <outlet property="txtLng" destination="fNs-9U-YZi" id="txt4"/>
+                <outlet property="txtPitch" destination="FV3-CX-hY1" id="txt3"/>
+                <outlet property="view" destination="TI7-s9-tAd" id="cPZ-Qr-Aqg"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <view id="TI7-s9-tAd">
+            <rect key="frame" x="0.0" y="0.0" width="844" height="331"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OGW-aC-Ew5">
+                    <rect key="frame" x="0.0" y="0.0" width="844" height="294"/>
+                    <connections>
+                        <outlet property="delegate" destination="-2" id="G1f-wl-bwd"/>
+                    </connections>
+                </mapView>
+                <matrix verticalHuggingPriority="750" mode="highlight" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAy-XS-rYP">
+                    <rect key="frame" x="11" y="302" width="604" height="17"/>
+                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    <size key="cellSize" width="72" height="17"/>
+                    <size key="intercellSpacing" width="4" height="2"/>
+                    <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="ig5-EQ-gSR">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <cells>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Lattitude" id="MFe-oO-TqX">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="39.982496" drawsBackground="YES" id="Th5-bI-kaf">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Longitude" id="MFe-oO-Tqa">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="116.307122" drawsBackground="YES" id="fNs-9U-YZi">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Heading" id="MFe-oO-Tqt">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="45" drawsBackground="YES" id="ZsT-BQ-WJK">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Pitch" id="MFe-oO-Tqq">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                        <column>
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="45" drawsBackground="YES" id="FV3-CX-hY1">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </column>
+                    </cells>
+                    <connections>
+                        <action selector="annotationsAction:" target="-2" id="hX2-Vk-ZIW"/>
+                    </connections>
+                </matrix>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-iM-3Sg">
+                    <rect key="frame" x="623" y="301" width="33" height="19"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="roundRect" title="GO" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Qmh-Vk-6dx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="cellTitle"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="annotationsAction:" target="-2" id="fMO-lg-wmM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="OGW-aC-Ew5" firstAttribute="leading" secondItem="TI7-s9-tAd" secondAttribute="leading" id="CJb-XQ-NcQ"/>
+                <constraint firstItem="UAy-XS-rYP" firstAttribute="leading" secondItem="TI7-s9-tAd" secondAttribute="leading" constant="11" id="GiC-uH-N0m"/>
+                <constraint firstAttribute="bottom" secondItem="OGW-aC-Ew5" secondAttribute="bottom" id="YF1-z1-5d4"/>
+                <constraint firstItem="OGW-aC-Ew5" firstAttribute="top" secondItem="TI7-s9-tAd" secondAttribute="top" constant="37" id="YqA-ZR-d3N"/>
+                <constraint firstItem="OGW-aC-Ew5" firstAttribute="top" secondItem="UAy-XS-rYP" secondAttribute="bottom" constant="8" symbolic="YES" id="b7S-1x-XSn"/>
+                <constraint firstAttribute="trailing" secondItem="OGW-aC-Ew5" secondAttribute="trailing" id="m5Y-ia-iYI"/>
+            </constraints>
+            <point key="canvasLocation" x="477" y="171.5"/>
+        </view>
+        <userDefaultsController representsSharedInstance="YES" id="MvX-uA-fZY"/>
+    </objects>
+</document>
