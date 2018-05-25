@@ -32,9 +32,9 @@
                     </connections>
                 </mapView>
                 <matrix verticalHuggingPriority="750" mode="highlight" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAy-XS-rYP">
-                    <rect key="frame" x="11" y="302" width="604" height="17"/>
+                    <rect key="frame" x="11" y="302" width="713" height="17"/>
                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    <size key="cellSize" width="72" height="17"/>
+                    <size key="cellSize" width="85" height="17"/>
                     <size key="intercellSpacing" width="4" height="2"/>
                     <buttonCell key="prototype" type="radio" title="Radio" imagePosition="left" alignment="left" inset="2" id="ig5-EQ-gSR">
                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -49,7 +49,7 @@
                             </textFieldCell>
                         </column>
                         <column>
-                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="39.982496" drawsBackground="YES" id="Th5-bI-kaf">
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="37.467725" drawsBackground="YES" id="Th5-bI-kaf">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -63,7 +63,7 @@
                             </textFieldCell>
                         </column>
                         <column>
-                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="116.307122" drawsBackground="YES" id="fNs-9U-YZi">
+                            <textFieldCell lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="-121.9174822" drawsBackground="YES" id="fNs-9U-YZi">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -103,7 +103,7 @@
                     </connections>
                 </matrix>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-iM-3Sg">
-                    <rect key="frame" x="623" y="301" width="33" height="19"/>
+                    <rect key="frame" x="791" y="300" width="33" height="19"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="roundRect" title="GO" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Qmh-Vk-6dx">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
